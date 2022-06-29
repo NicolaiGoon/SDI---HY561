@@ -1,0 +1,19 @@
+CS-561;Semantic Web,Ontology,RDF Schema,FOAF (ontology),VoID,Linked data,Dublin Core,Semantic search,Semantic matching,Triplestore,Protégé (software),SPARQL,World Wide Web,Virtuoso Universal Server,Data warehouse,Data integration
+CS-463;Information retrieval,Tf-idf,Vector space model,Index term,Fuzzy retrieval,Stop words,Faceted search,Cosine similarity,Subject indexing,Web indexing,Recommender system,Link analysis,Knuth-Morris-Pratt algorithm,Boyer-Moore string search algorithm,Clustering,PageRank,Web search engine,Stemming
+CS-562;MapReduce,Apache Hadoop,Bloom filter,Locality-sensitive hashing,Big data,Data integration,Association rule learning,Affinity analysis,Recommender system,Clustering
+CS-460;Database,Query optimization,ACID,SQL,Database transaction,Atomicity (database systems),Query plan,Commit (data management),Join (SQL),External sorting,B-tree,Hash function,Database index,Conjunctive query
+CS-565;Business Process Model and Notation,Workflow management system,Petri net,Web service,Service-oriented software engineering,Service system,Representational state transfer,SOAP,Quality of service
+CS-567;Knowledge representation and reasoning,Answer set programming,First-order logic,Description logic,Prolog
+CS-577;Machine learning,Feature (machine learning),Supervised learning,Cross-validation (statistics),Binary classification,Overfitting,K-nearest neighbors algorithm,Artificial neural network,Decision tree,Random forest,Support vector machine,Naive Bayes classifier,Bayesian network,Logistic regression
+CS-543;Apache Spark,MongoDB,Machine learning,Apache Hadoop,Deep learning,
+CS-583;Betweenness centrality,Degree distribution,Degree (graph theory),Graph theory,Graph drawing,Dominance drawing,Force-directed graph drawing,Radial tree,Planar graph,Lattice graph,Planarity testing,Strongly connected component,Distance (graph theory),Graph theory
+CS-359;Hypertext Transfer Protocol,Java servlet,Cascading Style Sheets,HTML,HTML5,XML,World Wide Web
+CS-464;Human–computer interaction,3D interaction,Computer user satisfaction,Experience design,Human interface guidelines,Smart products,Usability
+CS-564;Human–computer interaction,Eye tracking,Kinect,Speech recognition,Gesture recognition,Sketch recognition,Smart products,Usability
+CS-593;Service science,management and engineering,Game theory,Supply chain,Service system,Auction
+CS-558;Computer graphics,Internet protocol suite,Password,Denial-of-service attack,Bitcoin,Domain Name System,Botnet,Intrusion detection system,Honeypot (computing)
+CS-540;Dynamic programming language,Virtual machine,Garbage collection (computer science),Domain-specific language,Metaprogramming
+CS-482;Molecular biology,Gene expression,Support vector machine,Biomarker,RNA,DNA,Biomedicine,Feature (machine learning)
+CS-553;Human–computer interaction,Multimedia,Robotics,Cognitive science
+CS-358;Computer graphics,Scene graph,OpenGL,Ray tracing,Virtual world,Animation,Rendering (computer graphics)
+CS-383;Graph theory,Interpersonal ties,Network dynamics,Complex network,Facebook,Twitter,Power law

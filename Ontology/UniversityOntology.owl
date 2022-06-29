@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#"
+     xml:base="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:uni="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#atLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#atLocation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Classroom"/>
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Department"/>
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Department"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#hasTeachingAssistant -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#hasTeachingAssistant">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#inArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#inArea">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Subject"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Area"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#isPrerequisiteOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#isPrerequisiteOf">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#partOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#recomendedCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#recomendedCourse">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#relatedSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#relatedSubject">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#studiesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#studiesIn">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Student"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#takesCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#takesCourse">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Student"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#takesPlaceIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#takesPlaceIn">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Classroom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#taughtInSemester -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#taughtInSemester">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Semester"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#teacherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#teacherOf">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Faculty"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#teachingAssistantOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#teachingAssistantOf">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Student"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#useLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#useLanguage">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#ProgrammingLanguage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#worksIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#worksIn">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#AdministrativeStaff"/>
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Faculty"/>
+        <rdfs:range rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#capacity">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Classroom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#course_ects -->
+
+    <owl:DatatypeProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#course_ects">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#email">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#text -->
+
+    <owl:DatatypeProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#text">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#webpage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#webpage">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#yearOfStudy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#yearOfStudy">
+        <rdfs:domain rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#AdministrativeStaff -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#AdministrativeStaff">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Area -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Area"/>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Books -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Books"/>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Classroom -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Classroom">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Department -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Department">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Faculty -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#GraduateCourse -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#GraduateCourse">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Lecturer -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Location -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Location"/>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Person -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Person"/>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#PostgraduateStudent -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#PostgraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Professor -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#ProgrammingLanguage -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#ProgrammingLanguage"/>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Semester -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Semester"/>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Student -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Student">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Subject -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Technical -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Technical">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#AdministrativeStaff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#UndergraduateCourse -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#UndergraduateCourse">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#UndergraduateStudent -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#UndergraduateStudent">
+        <rdfs:subClassOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University -->
+
+    <owl:Class rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-252 -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-252">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#UndergraduateCourse"/>
+        <taughtInSemester rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Winter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-463 -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-463">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#UndergraduateCourse"/>
+        <taughtInSemester rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Spring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-561 -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-561">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#GraduateCourse"/>
+        <takesPlaceIn rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#H208"/>
+        <taughtInSemester rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Spring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Computer_Science_Department -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Computer_Science_Department">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Department"/>
+        <atLocation rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University_Of_Crete"/>
+        <webpage>https://www.csd.uoc.gr/</webpage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Crete -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Crete">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#H208 -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#H208">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Classroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Heraklion -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Heraklion">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Location"/>
+        <partOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Crete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Information_Systems -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Information_Systems">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Nikos_Gounakis -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Nikos_Gounakis">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#PostgraduateStudent"/>
+        <studiesIn rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Computer_Science_Department"/>
+        <takesCourse rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-561"/>
+        <teachingAssistantOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-252"/>
+        <teachingAssistantOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-463"/>
+        <name>Nikolaos Gounakis</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Spring -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Spring">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University_Of_Crete -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University_Of_Crete">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#University"/>
+        <atLocation rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Voutes"/>
+        <webpage>https://www.uoc.gr/</webpage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Voutes -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Voutes">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Location"/>
+        <partOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Heraklion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Winter -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Winter">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Semester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Yannis_Tzitzikas -->
+
+    <owl:NamedIndividual rdf:about="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Yannis_Tzitzikas">
+        <rdf:type rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#Professor"/>
+        <teacherOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-252"/>
+        <teacherOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-463"/>
+        <teacherOf rdf:resource="http://www.csd.uoc.gr/~hy561/2022/1254/2022/5/UniversityOntology#CS-561"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
